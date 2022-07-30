@@ -8,6 +8,7 @@ services:
     volumes:
       - ./Python/src/:/app/src
       - ./data/:/app/data
+      - ./model/:/app/model
     working_dir:
       /app
     image: jupyter-notebook_pytorch
