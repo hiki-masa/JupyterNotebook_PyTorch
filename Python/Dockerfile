@@ -4,7 +4,8 @@ RUN apt-get update && \
     pip install --upgrade pip && \
 	apt install -y python3-pip
 # Jupyter Notebookのインストール
-RUN pip install notebook
+RUN pip install notebook && \
+    pip install ipywidgets
 # PyTorchのインストール
 RUN pip3 install torch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0
 # その他必要なライブラリのインストール
