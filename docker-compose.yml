@@ -3,10 +3,10 @@ services:
   app:
     restart: always
     build:
-      context: Python/
+      context: Dockerfile/
       dockerfile: Dockerfile
     volumes:
-      - ./Python/src/:/app/src
+      - ./src/:/app/src
       - ./data/:/app/data
       - ./model/:/app/model
     working_dir:

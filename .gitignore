@@ -1,2 +1,4 @@
 data/
-Python/src/.ipynb_checkpoints
+src/.ipynb_checkpoints
+src/Machine_Learning/.ipynb_checkpoints
+src/LIME/.ipynb_checkpoints
