@@ -8,5 +8,6 @@ RUN pip install notebook && \
     pip install ipywidgets
 
 # パッケージ一括インストール
-COPY requirements.txt .
+COPY Dockerfile/requirements.txt .
 RUN pip3 install -r requirements.txt
+RUN apt-get install -y libgl1-mesa-dev
